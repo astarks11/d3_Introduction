@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<meta charset="UTF-8">
+	<style>
+		svg {
+			width:400px;
+			height:400px;
+			display:block;
+			margin:auto;
+		}
+		.blue_bar {
+			fill:blue;
+			stroke-width:3;
+			stroke:black;
+		}
+		.red_bar {
+			fill:red;
+			stroke-width:3;
+			stroke:black;
+		}
+		.line_chart {
+			stroke:black;
+			stroke-width:3;
+		}
+		#line_path {
+			fill:none;
+			stroke:black;
+			stroke-width:3;
+		}
+		#pie {
+		}
+		#pie_char_sec1 {
+			fill: red;
+			stroke:black;
+			stroke-width:3;
+		}
+		#pie_char_sec2 {
+			fill:yellow;
+			stroke:black;
+			stroke-width:3;
+		}
+	</style>
+</head>
+<body>
+	<svg id='blue_bar_chart'>
+		<rect class="blue_bar" width="50" height="150" x="0" y="250"></rect>
+		<rect class="blue_bar" width="50" height="225" x="50" y="175"></rect>
+		<rect class="blue_bar" width="50" height="225" x="100" y="175"></rect>
+		<rect class="blue_bar" width="50" height="300" x="150" y="100"></rect>
+		<rect class="blue_bar" width="50" height="300" x="200" y="100"></rect>
+		<rect class="blue_bar" width="50" height="225" x="250" y="175"></rect>
+		<rect class="blue_bar" width="50" height="225" x="300" y="175"></rect>
+		<rect class="blue_bar" width="50" height="150" x="350" y="250"></rect>
+		
+	</svg>
+	<svg id='red_bar_chart'>
+		<rect class="red_bar" width="50" height="150" x="0" y="250"></rect>
+		<rect class="red_bar" width="50" height="225" x="50" y="175"></rect>
+		<rect class="red_bar" width="50" height="225" x="100" y="175"></rect>
+		<rect class="red_bar" width="50" height="300" x="150" y="100"></rect>
+		<rect class="red_bar" width="50" height="300" x="200" y="100"></rect>
+		<rect class="red_bar" width="50" height="225" x="250" y="175"></rect>
+		<rect class="red_bar" width="50" height="225" x="300" y="175"></rect>
+		<rect class="red_bar" width="50" height="150" x="350" y="250"></rect>
+		
+	</svg>
+	<svg id="line_line_chart">
+		<line class="line_chart" x1="0" y1="250" x2="50" y2="175"></line>
+		<line class="line_chart" x1="50" y1="175" x2="100" y2="175"></line>
+		<line class="line_chart" x1="100" y1="175" x2="150" y2="100"></line>
+		<line class="line_chart" x1="150" y1="100" x2="200" y2="100"></line>
+		<line class="line_chart" x1="200" y1="100" x2="250" y2="175"></line>
+		<line class="line_chart" x1="250" y1="175" x2="300" y2="175"></line>
+		<line class="line_chart" x1="300" y1="175" x2="350" y2="250"></line>
+	</svg>
+	<svg id="path_line_chart">
+		<path id="line_path" d="M0 250 L50 175 H100 L150 100 H200 L250 175 H300 L350 250"/>
+	</svg>
+	<svg id="pie_chart">
+		<circle id="pie_char_sec2" cx="200" cy="200" r="200" ></circle>
+		<path id="pie_char_sec1" d="M200,200 L200,0 A200,200 0 0,1 400,200 z"></path>
+
+	</svg>
+
+</body>
+</html>
